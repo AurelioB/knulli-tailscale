@@ -10,19 +10,9 @@
 
 ***Step 2: run this script for auto-installation.***
 
-*This script will auto select your machine's **architecture** to download specific tailscale files and your **subnet/cidr** so you can access other machines if you route them to your batocera machine.*
-
-***If you want only subnet to then use below script.***
+*This script will auto select your machine's **architecture** to download specific tailscale files*
 
     curl -L https://raw.githubusercontent.com/AurelioB/knulli-tailscale/refs/heads/main/install.sh | bash
-
-***If you want exit node and subnet to then use this script.***
-
-    curl -L https://raw.githubusercontent.com/AurelioB/knulli-tailscale/refs/heads/main/install_exit_node.sh | bash
-
-***If you want exit node and without accept routes then use this script.***
-
-    curl -L  https://raw.githubusercontent.com/AurelioB/knulli-tailscale/refs/heads/main/install_exit_node_without_accept_routes.sh | bash
 
 ***Step 3: Login to your tailscale with the given link and activate your batocera machine.***
 
