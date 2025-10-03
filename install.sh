@@ -144,16 +144,16 @@ else
   if [ -n "$AUTH_ARG" ]; then
     log "Bringing node up with auth key (non-interactive)…"
     # If prefs mismatch, retry once with --reset
-    if ! "$BIN_TS" up --accept-routes --ssh=false $AUTH_ARG >/dev/null 2>&1; then
+    if ! "$BIN_TS" up --accept-routes=false --ssh=false $AUTH_ARG >/dev/null 2>&1; then
       warn "First 'tailscale up' failed; retrying with --reset"
-      "$BIN_TS" up --reset --accept-routes --ssh=false $AUTH_ARG
+      "$BIN_TS" up --reset --accept-routes=false --ssh=false $AUTH_ARG
     fi
   else
     cat <<EOF
 
 To authenticate this device (one-time), run on the device shell:
 
-  /userdata/tailscale/tailscale up --accept-routes --ssh=false
+  /userdata/tailscale/tailscale up --accept-routes=false --ssh=false
 
 This will print a URL to approve in your browser, then exit. After that,
 the daemon-only service will reconnect automatically on boot.
