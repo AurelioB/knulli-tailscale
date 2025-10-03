@@ -1,8 +1,8 @@
-# Batocera-Tailscale....
+# Knulli-Tailscale....
 
-**Access you batocera machine from anywhere in the world or use it as a vpn server.**
+**Access you knulli machine from anywhere in the world or use it as a vpn server.**
 
-**Run Tailscale in batocera with Subnet, Accept Routes and Exit node. Tailscale starts at boot.**
+**Run Tailscale in knulli or other batocera forks. Tailscale starts at boot.**
 
 ***Step 1: Login into your batocera machine via ssh.***
 
